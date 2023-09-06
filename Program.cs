@@ -21,19 +21,18 @@ void PrintNewArray(string[] collection)
         }
         if (i == collection.Length - 1)
         {
-        Console.Write(collection[i] + "]");
+            Console.Write(collection[i] + "]");
         }
     }
 }
 
 void PrintArray(string[] collection)
 {
-
+    Console.Write("[");
     for (int i = 0; i < collection.Length; i++)
     {
         if (i < collection.Length - 1)
         {
-            if (i == 0) Console.Write("[");
             Console.Write(collection[i]);
             Console.Write(", ");
         }
